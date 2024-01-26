@@ -1,0 +1,34 @@
+{% extends "components/base.html" %}
+{% block title %} Home Page {% endblock %}
+<style>
+    a.card {
+        width: 80%;
+    }
+
+    a.card:hover {
+        text-decoration: none;
+    }
+</style>
+{% block content %}
+<br>
+<h1>💻 Explore Coding</h1>
+<br>
+<a class="card m-4" href="/python">
+    <div class="card-body text-dark">
+        <h5>Basic Python</h5>
+        <p>Explore the fundamentals of Python with our Basic Python course. Dive into essential concepts and gain a
+            solid
+            foundation in this versatile programming language. Start your journey to mastering Python today</p>
+    </div>
+</a>
+<br>
+<a class="card m-4" href="/javascript">
+    <div class="card-body text-dark">
+        <h5>Basic JavaScript</h5>
+        <p>Explore the fundamentals of Python with our Basic Python course. Dive into essential concepts and gain a
+            solid
+            foundation in this versatile programming language. Start your journey to mastering Python today</p>
+    </div>
+</a>
+
+{% endblock %}

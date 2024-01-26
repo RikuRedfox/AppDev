@@ -1,0 +1,66 @@
+{% extends "components/base.html" %}
+{% block title %} Basic Python {% endblock %}
+{% block content %}
+<h1>Welcome to the Python Basics Tutorial</h1>
+
+<h2>Introduction</h2>
+<p>Python is a versatile and beginner-friendly programming language. This tutorial will guide you through the basics.
+</p>
+
+<h2>Getting Started</h2>
+<p>Before you start coding, make sure Python is installed on your computer. You can download it from the official
+    <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python website</a>.
+</p>
+
+<h2>Your First Python Program</h2>
+<p>Create a new file with a <code>.py</code> extension (e.g., <code>hello.py</code>) and add the following code:</p>
+<pre><code>
+print("Hello, Python!")
+</code></pre>
+<p>Run the program by navigating to its directory in the terminal and typing <code>python hello.py</code>.</p>
+
+<h2>Variables and Data Types</h2>
+<p>In Python, you can declare variables without specifying their data types:</p>
+<pre><code>
+message = "Hello, Python!"
+number = 42
+</code></pre>
+
+<h2>Control Flow</h2>
+<p>Use <code>if</code>, <code>else</code>, and <code>elif</code> statements for control flow:</p>
+<pre><code>
+if number &gt; 0:
+  print("Positive number")
+elif number == 0:
+  print("Zero")
+else:
+  print("Negative number")
+</code></pre>
+
+<h2>Loops</h2>
+<p>Python supports <code>for</code> and <code>while</code> loops:</p>
+<pre><code>
+for i in range(5):
+  print(i)
+
+# or
+
+counter = 0
+while counter &lt; 5:
+  print(counter)
+  counter += 1
+</code></pre>
+
+<h2>Functions</h2>
+<p>Define functions using the <code>def</code> keyword:</p>
+<pre><code>
+def greet(name):
+  print("Hello, " + name + "!")
+
+greet("John")
+</code></pre>
+
+<h2>That's It!</h2>
+<p>Congratulations! You've completed a brief introduction to Python. There's much more to explore, so keep coding!</p>
+
+{% endblock %}
