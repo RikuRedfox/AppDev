@@ -7,8 +7,8 @@ urlpatterns = [
     path("javascript/", views.javascript_course, name="javascriptCourse"),
     path("cplusplus/", views.cplusplus_course, name="cplusplusCourse"),
     path("lua/", views.lua_course, name="luaCourse"),
+    path("todos/", views.todos, name="todos"),
     path("about/", views.about, name="about"),
     path("contact/", views.contact, name="contact"),
     
-    # path("todos/", views.todos, name="todos")
 ]
