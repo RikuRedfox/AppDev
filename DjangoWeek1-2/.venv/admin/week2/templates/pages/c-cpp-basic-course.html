@@ -1,0 +1,100 @@
+{% extends "components/base.html" %}
+{% block title %} Basic JavaScript {% endblock %}
+{% block content %}
+<h1>Welcome to the C++ Basics Tutorial</h1>
+
+<h2>Introduction</h2>
+<p>C++ is a powerful and widely used programming language that provides both low-level and high-level features. This
+    tutorial will guide you through the fundamental concepts of C++ programming to help you get started.</p>
+
+<h2>Getting Started</h2>
+<p>Before you begin coding in C++, make sure you have a C++ compiler installed on your computer. You can download one
+    such as GCC or use an integrated development environment (IDE) like Visual Studio or Code::Blocks.</p>
+
+<h2>Your First C++ Program</h2>
+<p>Create a new C++ source file (e.g., <code>hello.cpp</code>) and add the following code:</p>
+<pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello, C++!" << std::endl;
+    return 0;
+}
+</code></pre>
+<p>Compile and run the program using your C++ compiler to see the output.</p>
+
+<h2>Variables and Data Types</h2>
+<p>C++ is a statically typed language, and you need to declare variables with their data types:</p>
+<pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int number = 42;
+    double pi = 3.14;
+    char grade = 'A';
+
+    return 0;
+}
+</code></pre>
+
+<h2>Control Flow</h2>
+<p>Use <code>if</code>, <code>else</code>, and <code>else if</code> statements for control flow:</p>
+<pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int number = 42;
+
+    if (number > 0) {
+        std::cout << "Positive number" << std::endl;
+    } else if (number == 0) {
+        std::cout << "Zero" << std::endl;
+    } else {
+        std::cout << "Negative number" << std::endl;
+    }
+
+    return 0;
+}
+</code></pre>
+
+<h2>Loops</h2>
+<p>C++ supports <code>for</code> and <code>while</code> loops:</p>
+<pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        std::cout << i << std::endl;
+    }
+
+    // or
+
+    int counter = 0;
+    while (counter < 5) {
+        std::cout << counter << std::endl;
+        counter++;
+    }
+
+    return 0;
+}
+</code></pre>
+
+<h2>Functions</h2>
+<p>Define functions using the <code>void</code> keyword for functions that do not return a value:</p>
+<pre><code>
+#include &lt;iostream&gt;
+
+void greet(const std::string &name) {
+    std::cout << "Hello, " << name << "!" << std::endl;
+}
+
+int main() {
+    greet("John");
+    return 0;
+}
+</code></pre>
+
+<h2>That's It!</h2>
+<p>Congratulations! You've completed a brief introduction to C++. There's a wealth of possibilities with C++, so
+    continue exploring and building your programming skills.</p>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "components/base.html" %}
+{% block title %} Basic JavaScript {% endblock %}
+{% block content %}
+<h1>Welcome to the JavaScript Basics Tutorial</h1>
+
+<h2>Introduction</h2>
+<p>JavaScript is a dynamic and versatile programming language, well-suited for both beginners and experienced developers. This tutorial will walk you through the foundational concepts of JavaScript to help you grasp the basics.</p>
+
+<h2>Getting Started</h2>
+<p>If you're new to JavaScript, ensure that you have a text editor and a web browser installed. JavaScript is primarily used for web development and can be executed directly in the browser.</p>
+
+<h2>Your First JavaScript Program</h2>
+<p>Create an HTML file and add the following JavaScript code within the <code>&lt;script&gt;</code> tags:</p>
+<pre><code>
+console.log("Hello, JavaScript!");
+</code></pre>
+<p>Open the HTML file in your web browser, and you should see the output in the console.</p>
+
+<h2>Variables and Data Types</h2>
+<p>JavaScript is loosely typed, allowing you to declare variables without specifying their data types:</p>
+<pre><code>
+let message = "Hello, JavaScript!";
+let number = 42;
+</code></pre>
+
+<h2>Control Flow</h2>
+<p>Use <code>if</code>, <code>else</code>, and <code>else if</code> statements for control flow:</p>
+<pre><code>
+if (number > 0) {
+  console.log("Positive number");
+} else if (number === 0) {
+  console.log("Zero");
+} else {
+  console.log("Negative number");
+}
+</code></pre>
+
+<h2>Loops</h2>
+<p>JavaScript supports <code>for</code> and <code>while</code> loops:</p>
+<pre><code>
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// or
+
+let counter = 0;
+while (counter < 5) {
+  console.log(counter);
+  counter++;
+}
+</code></pre>
+
+<h2>Functions</h2>
+<p>Define functions using the <code>function</code> keyword or using arrow functions:</p>
+<pre><code>
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("John");
+</code></pre>
+
+<h2>That's It!</h2>
+<p>Congratulations! You've completed a brief introduction to JavaScript. There's a vast world of possibilities with JavaScript, so continue exploring and experimenting with your code!</p>
+
+{% endblock %}

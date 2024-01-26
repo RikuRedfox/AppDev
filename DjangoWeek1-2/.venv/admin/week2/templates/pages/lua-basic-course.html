@@ -1,0 +1,69 @@
+{% extends "components/base.html" %}
+{% block title %} Basic Lua {% endblock %}
+{% block content %}
+<h1>Welcome to the Lua Basics Tutorial</h1>
+
+<h2>Introduction</h2>
+<p>Lua is a versatile scripting language designed for embedded systems and general-purpose programming. This tutorial will guide you through the fundamental concepts of Lua to help you start your journey.</p>
+
+<h2>Getting Started</h2>
+<p>To begin coding in Lua, you'll need to have a Lua interpreter installed on your system. You can download it from the official Lua website or use an online Lua interpreter for quick experimentation.</p>
+
+<h2>Your First Lua Program</h2>
+<p>Create a new Lua script file (e.g., <code>hello.lua</code>) and add the following code:</p>
+<pre><code>
+print("Hello, Lua!")
+</code></pre>
+<p>Run the script using the Lua interpreter to see the output.</p>
+
+<h2>Variables and Data Types</h2>
+<p>Like many scripting languages, Lua is dynamically typed, allowing you to declare variables without specifying their types:</p>
+<pre><code>
+message = "Hello, Lua!"
+number = 42
+</code></pre>
+
+<h2>Control Flow</h2>
+<p>Use <code>if</code>, <code>else</code>, and <code>elseif</code> statements for control flow:</p>
+<pre><code>
+number = 42
+
+if number > 0 then
+    print("Positive number")
+elseif number == 0 then
+    print("Zero")
+else
+    print("Negative number")
+end
+</code></pre>
+
+<h2>Loops</h2>
+<p>Lua supports <code>for</code> and <code>while</code> loops:</p>
+<pre><code>
+for i = 1, 5 do
+    print(i)
+end
+
+-- or
+
+counter = 0
+while counter < 5 do
+    print(counter)
+    counter = counter + 1
+end
+</code></pre>
+
+<h2>Functions</h2>
+<p>Define functions using the <code>function</code> keyword:</p>
+<pre><code>
+function greet(name)
+    print("Hello, " .. name .. "!")
+end
+
+greet("John")
+</code></pre>
+
+<h2>That's It!</h2>
+<p>Congratulations! You've completed a brief introduction to Lua. Lua's simplicity and versatility make it an excellent choice for various applications. Keep exploring and experimenting with Lua to enhance your programming skills.</p>
+
+{% endblock %}

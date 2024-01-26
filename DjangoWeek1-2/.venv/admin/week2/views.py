@@ -14,6 +14,15 @@ def contact(request):
 def python_cource(request):
     return render(request, "pages/python-basic-course.html")
 
+def javascript_course(request):
+    return render(request, "pages/javascript-basic-course.html")
+
+def cplusplus_course(request):
+    return render(request, "pages/c-cpp-basic-course.html")
+
+def lua_course(request):
+    return render(request, "pages/lua-basic-course.html")
+
 # def todos(request):
 #     items = TodoItem.objects.all()
 #     return render(request, "todos.html", {"todos": items})
